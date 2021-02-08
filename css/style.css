@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+}
+
+/* table */
+.table {
+  display: inline-block;
+  margin: 30px;
+  border: 1px solid lightgray;
+
+}
+
+.table li {
+  border-top: 1px solid lightgray;
+}
+
+.table li:first-child {
+  font-weight: bold;
+  border-top: none;
+}
+
+.table li div{
+  padding: 10px;
+}
+
+.table .index-box {
+  width: 40px;
+  text-align: center;
+  border-right: 1px solid lightgray;
+}
+
+.table .mail-box{
+  flex-grow: 1;
+}

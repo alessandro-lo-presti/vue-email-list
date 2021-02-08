@@ -14,9 +14,28 @@
   <body>
 
     <div id="app">
-      <ul>
-        <li v-for="mail in mails"> {{ mail }} </li>
-      </ul>
+
+      <div class="container">
+        <ul class="table">
+          <li>
+            <div class="index-box">
+              N
+            </div>
+            <div class="mail-box">
+              Mail
+            </div>
+          </li>
+          <li v-for="mail,index in mails">
+            <div class="index-box">
+              {{ index + 1}}
+            </div>
+            <div class="mail-box">
+              {{ mail }}
+            </div>
+          </li>
+        </ul>
+      </div>
+
     </div>
 
     <script src="js/script.js" charset="utf-8"></script>
